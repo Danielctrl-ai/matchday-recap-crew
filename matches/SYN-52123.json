@@ -1,0 +1,413 @@
+{
+  "match_id": "SYN-52123",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Kingsbridge United",
+  "away_team": "Northgate Athletic",
+  "home_style": "possession",
+  "away_style": "pressing",
+  "final_score": "2-1",
+  "team_stats": {
+    "Kingsbridge United": {
+      "passes": 375,
+      "shots": 5,
+      "shots_on_target": 5,
+      "xg": 1.27,
+      "corners": 0,
+      "fouls": 4,
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "possession_pct": 60
+    },
+    "Northgate Athletic": {
+      "passes": 256,
+      "shots": 6,
+      "shots_on_target": 4,
+      "xg": 0.91,
+      "corners": 1,
+      "fouls": 6,
+      "yellow_cards": 0,
+      "red_cards": 1,
+      "possession_pct": 40
+    }
+  },
+  "lineups": {
+    "Kingsbridge United": [
+      {
+        "id": "KIN01",
+        "name": "Kai Varga",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "KIN02",
+        "name": "Mateo Moreau",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "KIN03",
+        "name": "Felix Okafor",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "KIN04",
+        "name": "Kai Mensah",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "KIN05",
+        "name": "Theo Iversen",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "KIN06",
+        "name": "Dario Adeyemi",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "KIN07",
+        "name": "Jonah Okafor",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "KIN08",
+        "name": "Marcus Kowal",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "KIN09",
+        "name": "Jonah Hartley",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "KIN10",
+        "name": "Sami Okafor",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "KIN11",
+        "name": "Felix Kowal",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "KIN12",
+        "name": "Theo Quill",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "KIN13",
+        "name": "Kai Quill",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "KIN14",
+        "name": "Owen Okafor",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "KIN15",
+        "name": "Kai Ashdown",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Northgate Athletic": [
+      {
+        "id": "NOR01",
+        "name": "Niko Moreau",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "NOR02",
+        "name": "Jonah Iversen",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "NOR03",
+        "name": "Owen Iversen",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "NOR04",
+        "name": "Mateo Ashdown",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "NOR05",
+        "name": "Elias Varga",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "NOR06",
+        "name": "Owen Adeyemi",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "NOR07",
+        "name": "Tomas Kowal",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "NOR08",
+        "name": "Tomas Quill",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "NOR09",
+        "name": "Theo Kowal",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "NOR10",
+        "name": "Sami Adeyemi",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "NOR11",
+        "name": "Leo Moreau",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "NOR12",
+        "name": "Jonah Brennan",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "NOR13",
+        "name": "Rafa Varga",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "NOR14",
+        "name": "Owen Fairbairn",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "NOR15",
+        "name": "Kai Ashdown",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 4,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Owen Adeyemi"
+    },
+    {
+      "minute": 9,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Tomas Quill",
+      "xg": 0.19,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 9,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Jonah Hartley"
+    },
+    {
+      "minute": 15,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Jonah Okafor",
+      "xg": 0.2,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 20,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Sami Okafor"
+    },
+    {
+      "minute": 29,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Owen Iversen"
+    },
+    {
+      "minute": 44,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Marcus Kowal",
+      "card": "yellow"
+    },
+    {
+      "minute": 49,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Leo Moreau",
+      "xg": 0.06,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 51,
+      "team": "Kingsbridge United",
+      "type": "goal",
+      "player": "Felix Kowal",
+      "xg": 0.29,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "1-0"
+    },
+    {
+      "minute": 59,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Marcus Kowal",
+      "xg": 0.13,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 60,
+      "team": "Kingsbridge United",
+      "type": "substitution",
+      "player_off": "Jonah Okafor",
+      "player_on": "Theo Quill"
+    },
+    {
+      "minute": 61,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Owen Adeyemi",
+      "card": "red"
+    },
+    {
+      "minute": 65,
+      "team": "Kingsbridge United",
+      "type": "goal",
+      "player": "Jonah Hartley",
+      "xg": 0.56,
+      "zone": "close range",
+      "on_target": true,
+      "score_after": "2-0"
+    },
+    {
+      "minute": 67,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Sami Adeyemi",
+      "xg": 0.22,
+      "zone": "inside box",
+      "on_target": true,
+      "assist": "Tomas Quill",
+      "score_after": "2-1"
+    },
+    {
+      "minute": 70,
+      "team": "Kingsbridge United",
+      "type": "substitution",
+      "player_off": "Sami Okafor",
+      "player_on": "Kai Quill"
+    },
+    {
+      "minute": 71,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Sami Adeyemi",
+      "xg": 0.22,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 73,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Leo Moreau",
+      "xg": 0.19,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 73,
+      "team": "Northgate Athletic",
+      "type": "corner"
+    },
+    {
+      "minute": 76,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Owen Iversen"
+    },
+    {
+      "minute": 77,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Sami Adeyemi",
+      "xg": 0.03,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 80,
+      "team": "Kingsbridge United",
+      "type": "substitution",
+      "player_off": "Kai Quill",
+      "player_on": "Owen Okafor"
+    },
+    {
+      "minute": 82,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Elias Varga"
+    },
+    {
+      "minute": 90,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Felix Kowal"
+    },
+    {
+      "minute": 92,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Felix Kowal",
+      "xg": 0.09,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 93,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Elias Varga"
+    }
+  ]
+}

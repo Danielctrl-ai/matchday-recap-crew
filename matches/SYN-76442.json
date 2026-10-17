@@ -1,0 +1,441 @@
+{
+  "match_id": "SYN-76442",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Ashford Wanderers",
+  "away_team": "Kingsbridge United",
+  "home_style": "direct",
+  "away_style": "possession",
+  "final_score": "1-1",
+  "team_stats": {
+    "Ashford Wanderers": {
+      "passes": 293,
+      "shots": 4,
+      "shots_on_target": 2,
+      "xg": 0.43,
+      "corners": 0,
+      "fouls": 9,
+      "yellow_cards": 2,
+      "red_cards": 0,
+      "possession_pct": 47
+    },
+    "Kingsbridge United": {
+      "passes": 335,
+      "shots": 7,
+      "shots_on_target": 3,
+      "xg": 0.9,
+      "corners": 1,
+      "fouls": 6,
+      "yellow_cards": 0,
+      "red_cards": 0,
+      "possession_pct": 53
+    }
+  },
+  "lineups": {
+    "Ashford Wanderers": [
+      {
+        "id": "ASH01",
+        "name": "Leo Lindqvist",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "ASH02",
+        "name": "Niko Iversen",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "ASH03",
+        "name": "Marcus Fairbairn",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "ASH04",
+        "name": "Elias Okafor",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "ASH05",
+        "name": "Dario Quill",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "ASH06",
+        "name": "Jonah Varga",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "ASH07",
+        "name": "Luca Silva-Reed",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "ASH08",
+        "name": "Owen Castell",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "ASH09",
+        "name": "Marcus Kowal",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "ASH10",
+        "name": "Mateo Quill",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "ASH11",
+        "name": "Owen Adeyemi",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "ASH12",
+        "name": "Mateo Mensah",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "ASH13",
+        "name": "Marcus Adeyemi",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "ASH14",
+        "name": "Niko Brennan",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "ASH15",
+        "name": "Mateo Okafor",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Kingsbridge United": [
+      {
+        "id": "KIN01",
+        "name": "Sami Ashdown",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "KIN02",
+        "name": "Leo Fairbairn",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "KIN03",
+        "name": "Niko Adeyemi",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "KIN04",
+        "name": "Owen Hartley",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "KIN05",
+        "name": "Sami Moreau",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "KIN06",
+        "name": "Kai Brennan",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "KIN07",
+        "name": "Felix Quill",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "KIN08",
+        "name": "Kai Silva-Reed",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "KIN09",
+        "name": "Felix Hartley",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "KIN10",
+        "name": "Ade Moreau",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "KIN11",
+        "name": "Tomas Adeyemi",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "KIN12",
+        "name": "Owen Ashdown",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "KIN13",
+        "name": "Leo Varga",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "KIN14",
+        "name": "Niko Fairbairn",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "KIN15",
+        "name": "Marcus Silva-Reed",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 1,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Tomas Adeyemi",
+      "xg": 0.14,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 1,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Dario Quill",
+      "card": "yellow"
+    },
+    {
+      "minute": 4,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Elias Okafor",
+      "card": "yellow"
+    },
+    {
+      "minute": 5,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Leo Fairbairn"
+    },
+    {
+      "minute": 11,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Owen Hartley"
+    },
+    {
+      "minute": 13,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Ade Moreau",
+      "xg": 0.07,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 18,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Tomas Adeyemi",
+      "xg": 0.07,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 19,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Jonah Varga"
+    },
+    {
+      "minute": 23,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Leo Fairbairn"
+    },
+    {
+      "minute": 25,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Kai Silva-Reed"
+    },
+    {
+      "minute": 31,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Mateo Quill"
+    },
+    {
+      "minute": 34,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Niko Iversen"
+    },
+    {
+      "minute": 43,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Marcus Kowal",
+      "xg": 0.03,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 47,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Kai Silva-Reed",
+      "xg": 0.05,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 55,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Kai Silva-Reed"
+    },
+    {
+      "minute": 60,
+      "team": "Ashford Wanderers",
+      "type": "substitution",
+      "player_off": "Owen Castell",
+      "player_on": "Mateo Mensah"
+    },
+    {
+      "minute": 63,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Felix Hartley",
+      "xg": 0.21,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 64,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Elias Okafor"
+    },
+    {
+      "minute": 67,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Mateo Quill"
+    },
+    {
+      "minute": 68,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Mateo Mensah"
+    },
+    {
+      "minute": 69,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Sami Moreau"
+    },
+    {
+      "minute": 70,
+      "team": "Kingsbridge United",
+      "type": "substitution",
+      "player_off": "Leo Fairbairn",
+      "player_on": "Owen Ashdown"
+    },
+    {
+      "minute": 73,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Tomas Adeyemi",
+      "xg": 0.08,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 73,
+      "team": "Kingsbridge United",
+      "type": "corner"
+    },
+    {
+      "minute": 73,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Elias Okafor"
+    },
+    {
+      "minute": 79,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Mateo Quill",
+      "xg": 0.15,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 80,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Mateo Mensah",
+      "xg": 0.14,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 80,
+      "team": "Ashford Wanderers",
+      "type": "substitution",
+      "player_off": "Niko Iversen",
+      "player_on": "Marcus Adeyemi"
+    },
+    {
+      "minute": 84,
+      "team": "Ashford Wanderers",
+      "type": "goal",
+      "player": "Marcus Adeyemi",
+      "xg": 0.11,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "1-0"
+    },
+    {
+      "minute": 91,
+      "team": "Kingsbridge United",
+      "type": "goal",
+      "player": "Felix Hartley",
+      "xg": 0.28,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "1-1"
+    }
+  ]
+}

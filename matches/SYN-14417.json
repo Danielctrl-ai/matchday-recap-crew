@@ -1,0 +1,437 @@
+{
+  "match_id": "SYN-14417",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Riverside Rovers",
+  "away_team": "Millbrook Town",
+  "home_style": "possession",
+  "away_style": "counter",
+  "final_score": "4-0",
+  "team_stats": {
+    "Riverside Rovers": {
+      "passes": 426,
+      "shots": 11,
+      "shots_on_target": 10,
+      "xg": 2.35,
+      "corners": 1,
+      "fouls": 3,
+      "yellow_cards": 0,
+      "red_cards": 0,
+      "possession_pct": 72
+    },
+    "Millbrook Town": {
+      "passes": 178,
+      "shots": 0,
+      "shots_on_target": 0,
+      "xg": 0.0,
+      "corners": 0,
+      "fouls": 11,
+      "yellow_cards": 1,
+      "red_cards": 1,
+      "possession_pct": 28
+    }
+  },
+  "lineups": {
+    "Riverside Rovers": [
+      {
+        "id": "RIV01",
+        "name": "Theo Varga",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "RIV02",
+        "name": "Jonah Silva-Reed",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "RIV03",
+        "name": "Sami Adeyemi",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "RIV04",
+        "name": "Marcus Castell",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "RIV05",
+        "name": "Ade Mensah",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "RIV06",
+        "name": "Felix Iversen",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "RIV07",
+        "name": "Sami Okafor",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "RIV08",
+        "name": "Leo Varga",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "RIV09",
+        "name": "Luca Ashdown",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "RIV10",
+        "name": "Tomas Doyle",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "RIV11",
+        "name": "Jonah Castell",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "RIV12",
+        "name": "Niko Kowal",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "RIV13",
+        "name": "Leo Castell",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "RIV14",
+        "name": "Dario Castell",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "RIV15",
+        "name": "Elias Varga",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Millbrook Town": [
+      {
+        "id": "MIL01",
+        "name": "Jonah Iversen",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "MIL02",
+        "name": "Ade Varga",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "MIL03",
+        "name": "Felix Varga",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "MIL04",
+        "name": "Luca Castell",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "MIL05",
+        "name": "Tomas Iversen",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "MIL06",
+        "name": "Niko Quill",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "MIL07",
+        "name": "Sami Quill",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "MIL08",
+        "name": "Felix Iversen",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "MIL09",
+        "name": "Luca Varga",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "MIL10",
+        "name": "Luca Quill",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "MIL11",
+        "name": "Niko Ashdown",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "MIL12",
+        "name": "Jonah Fairbairn",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "MIL13",
+        "name": "Mateo Silva-Reed",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "MIL14",
+        "name": "Owen Doyle",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "MIL15",
+        "name": "Owen Adeyemi",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 2,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Niko Ashdown"
+    },
+    {
+      "minute": 5,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Felix Varga"
+    },
+    {
+      "minute": 8,
+      "team": "Riverside Rovers",
+      "type": "foul",
+      "player": "Jonah Castell"
+    },
+    {
+      "minute": 9,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Tomas Doyle",
+      "xg": 0.08,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 14,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Leo Varga",
+      "xg": 0.28,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 14,
+      "team": "Riverside Rovers",
+      "type": "corner"
+    },
+    {
+      "minute": 16,
+      "team": "Riverside Rovers",
+      "type": "foul",
+      "player": "Jonah Silva-Reed"
+    },
+    {
+      "minute": 17,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Luca Castell"
+    },
+    {
+      "minute": 23,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Tomas Iversen"
+    },
+    {
+      "minute": 24,
+      "team": "Riverside Rovers",
+      "type": "goal",
+      "player": "Tomas Doyle",
+      "xg": 0.21,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "1-0"
+    },
+    {
+      "minute": 24,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Luca Varga",
+      "card": "red"
+    },
+    {
+      "minute": 25,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Luca Ashdown",
+      "xg": 0.1,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 31,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Sami Quill",
+      "card": "yellow"
+    },
+    {
+      "minute": 35,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Jonah Castell",
+      "xg": 0.05,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 40,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Leo Varga",
+      "xg": 0.26,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 58,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Tomas Doyle",
+      "xg": 0.08,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 59,
+      "team": "Riverside Rovers",
+      "type": "goal",
+      "player": "Tomas Doyle",
+      "xg": 0.27,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "2-0"
+    },
+    {
+      "minute": 60,
+      "team": "Riverside Rovers",
+      "type": "goal",
+      "player": "Leo Varga",
+      "xg": 0.26,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "3-0"
+    },
+    {
+      "minute": 60,
+      "team": "Riverside Rovers",
+      "type": "substitution",
+      "player_off": "Tomas Doyle",
+      "player_on": "Niko Kowal"
+    },
+    {
+      "minute": 64,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Niko Quill"
+    },
+    {
+      "minute": 65,
+      "team": "Riverside Rovers",
+      "type": "foul",
+      "player": "Marcus Castell"
+    },
+    {
+      "minute": 69,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Luca Castell"
+    },
+    {
+      "minute": 70,
+      "team": "Riverside Rovers",
+      "type": "substitution",
+      "player_off": "Ade Mensah",
+      "player_on": "Leo Castell"
+    },
+    {
+      "minute": 72,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Luca Quill"
+    },
+    {
+      "minute": 79,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Sami Okafor",
+      "xg": 0.08,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 80,
+      "team": "Riverside Rovers",
+      "type": "substitution",
+      "player_off": "Niko Kowal",
+      "player_on": "Dario Castell"
+    },
+    {
+      "minute": 81,
+      "team": "Riverside Rovers",
+      "type": "goal",
+      "player": "Leo Varga",
+      "xg": 0.68,
+      "zone": "close range",
+      "on_target": true,
+      "score_after": "4-0"
+    },
+    {
+      "minute": 92,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Tomas Iversen"
+    },
+    {
+      "minute": 93,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Luca Quill"
+    }
+  ]
+}

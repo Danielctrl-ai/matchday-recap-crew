@@ -1,0 +1,402 @@
+{
+  "match_id": "SYN-53903",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Ashford Wanderers",
+  "away_team": "Millbrook Town",
+  "home_style": "direct",
+  "away_style": "counter",
+  "final_score": "0-0",
+  "team_stats": {
+    "Ashford Wanderers": {
+      "passes": 429,
+      "shots": 7,
+      "shots_on_target": 1,
+      "xg": 0.47,
+      "corners": 1,
+      "fouls": 3,
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "possession_pct": 72
+    },
+    "Millbrook Town": {
+      "passes": 156,
+      "shots": 4,
+      "shots_on_target": 1,
+      "xg": 0.65,
+      "corners": 1,
+      "fouls": 5,
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "possession_pct": 28
+    }
+  },
+  "lineups": {
+    "Ashford Wanderers": [
+      {
+        "id": "ASH01",
+        "name": "Felix Varga",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "ASH02",
+        "name": "Niko Mensah",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "ASH03",
+        "name": "Theo Mensah",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "ASH04",
+        "name": "Rafa Fairbairn",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "ASH05",
+        "name": "Ade Hartley",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "ASH06",
+        "name": "Mateo Lindqvist",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "ASH07",
+        "name": "Marcus Lindqvist",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "ASH08",
+        "name": "Marcus Quill",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "ASH09",
+        "name": "Owen Varga",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "ASH10",
+        "name": "Dario Doyle",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "ASH11",
+        "name": "Kai Mensah",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "ASH12",
+        "name": "Marcus Iversen",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "ASH13",
+        "name": "Theo Moreau",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "ASH14",
+        "name": "Sami Fairbairn",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "ASH15",
+        "name": "Leo Doyle",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Millbrook Town": [
+      {
+        "id": "MIL01",
+        "name": "Dario Hartley",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "MIL02",
+        "name": "Sami Brennan",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "MIL03",
+        "name": "Ade Hartley",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "MIL04",
+        "name": "Dario Doyle",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "MIL05",
+        "name": "Felix Fairbairn",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "MIL06",
+        "name": "Niko Adeyemi",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "MIL07",
+        "name": "Luca Castell",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "MIL08",
+        "name": "Elias Okafor",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "MIL09",
+        "name": "Rafa Varga",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "MIL10",
+        "name": "Mateo Moreau",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "MIL11",
+        "name": "Leo Silva-Reed",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "MIL12",
+        "name": "Niko Okafor",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "MIL13",
+        "name": "Tomas Mensah",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "MIL14",
+        "name": "Tomas Iversen",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "MIL15",
+        "name": "Sami Silva-Reed",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 2,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Sami Brennan"
+    },
+    {
+      "minute": 4,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Owen Varga",
+      "xg": 0.02,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 4,
+      "team": "Ashford Wanderers",
+      "type": "corner"
+    },
+    {
+      "minute": 6,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Marcus Lindqvist",
+      "xg": 0.11,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 18,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Niko Mensah",
+      "card": "yellow"
+    },
+    {
+      "minute": 21,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Dario Doyle",
+      "xg": 0.07,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 35,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Felix Fairbairn"
+    },
+    {
+      "minute": 37,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Elias Okafor",
+      "xg": 0.02,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 42,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Kai Mensah"
+    },
+    {
+      "minute": 44,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Luca Castell",
+      "xg": 0.43,
+      "zone": "close range",
+      "on_target": false
+    },
+    {
+      "minute": 44,
+      "team": "Millbrook Town",
+      "type": "corner"
+    },
+    {
+      "minute": 47,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Sami Brennan"
+    },
+    {
+      "minute": 55,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Marcus Lindqvist",
+      "xg": 0.06,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 57,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Luca Castell"
+    },
+    {
+      "minute": 60,
+      "team": "Ashford Wanderers",
+      "type": "substitution",
+      "player_off": "Ade Hartley",
+      "player_on": "Marcus Iversen"
+    },
+    {
+      "minute": 68,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Leo Silva-Reed",
+      "xg": 0.07,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 70,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Mateo Moreau",
+      "xg": 0.13,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 70,
+      "team": "Millbrook Town",
+      "type": "substitution",
+      "player_off": "Ade Hartley",
+      "player_on": "Niko Okafor"
+    },
+    {
+      "minute": 75,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Dario Doyle",
+      "card": "yellow"
+    },
+    {
+      "minute": 80,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Owen Varga",
+      "xg": 0.04,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 80,
+      "team": "Ashford Wanderers",
+      "type": "substitution",
+      "player_off": "Marcus Lindqvist",
+      "player_on": "Theo Moreau"
+    },
+    {
+      "minute": 87,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Owen Varga",
+      "xg": 0.11,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 89,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Theo Moreau",
+      "xg": 0.06,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 92,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Owen Varga"
+    }
+  ]
+}

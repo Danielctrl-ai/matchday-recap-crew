@@ -85,6 +85,8 @@ def build_agents(client, match: dict) -> dict:
             "Reply with ONLY a JSON object, no other text:\n"
             '{"approved": true|false, "claims_checked": <int>, '
             '"issues": [{"claim": "...", "problem": "...", "correct_fact": "..."}]}\n'
+            "List ONLY claims that are wrong. Never put a correct claim in issues. "
+            "Every issue must include correct_fact.\n"
             "approved is true only if issues is empty. Opinions and adjectives are not issues."
         ),
         tools=[t["overview"], t["goals"], t["minute"], t["player"], t["period"]],
@@ -103,13 +105,23 @@ def parse_verdict(text: str) -> dict:
     except json.JSONDecodeError:
         return {"approved": False, "claims_checked": 0,
                 "issues": [{"claim": "-", "problem": "Fact-checker returned invalid JSON", "correct_fact": "-"}]}
-    v.setdefault("issues", [])
-    v["approved"] = bool(v.get("approved")) and not v["issues"]
+    # Drop "issues" that are really confirmations: a genuine issue always comes with a correct fact.
+    v["issues"] = [i for i in v.get("issues") or []
+                   if isinstance(i, dict)
+                   and str(i.get("correct_fact") or "").strip().lower() not in ("", "none", "null", "n/a", "-")]
+    v["approved"] = not v["issues"]
     return v
 
 
-async def run_crew(match: dict, on_event=None, client=None) -> dict:
-    """Run the four agents on one match. on_event(agent_name, status, text) is optional."""
+DEMO_ERROR_NOTE = (
+    "\n\nDEMO MODE: to demonstrate the fact-checker, deliberately get exactly ONE fact wrong in "
+    "the recap (for example, change the minute of a goal or the name of a scorer). Do not mention it."
+)
+
+
+async def run_crew(match: dict, on_event=None, client=None, plant_error: bool = False) -> dict:
+    """Run the four agents on one match. on_event(agent_name, status, text) is optional.
+    plant_error=True makes the first draft contain one deliberate mistake (labelled demo mode)."""
     emit = on_event or (lambda *a: None)
     client = client or make_client()
     a = build_agents(client, match)
@@ -124,7 +136,8 @@ async def run_crew(match: dict, on_event=None, client=None) -> dict:
     emit("AnalystAgent", "done", analysis)
 
     emit("WriterAgent", "working", "Writing recap and social posts...")
-    draft = (await a["writer"].run(f"Fact sheet:\n{facts}\n\nAnalysis:\n{analysis}")).text
+    draft = (await a["writer"].run(
+        f"Fact sheet:\n{facts}\n\nAnalysis:\n{analysis}" + (DEMO_ERROR_NOTE if plant_error else ""))).text
     emit("WriterAgent", "done", draft)
 
     history = []
@@ -140,7 +153,8 @@ async def run_crew(match: dict, on_event=None, client=None) -> dict:
         if attempt == MAX_REVISIONS:
             break
         emit("WriterAgent", "working", "Fixing the issues the fact-checker found...")
-        fixes = "\n".join(f"- {i['claim']}: {i['problem']} -> {i['correct_fact']}" for i in verdict["issues"])
+        fixes = "\n".join(f"- {i.get('claim', '')}: {i.get('problem', '')} -> {i.get('correct_fact', '')}"
+                          for i in verdict["issues"])
         draft = (await a["writer"].run(
             f"Fact sheet:\n{facts}\n\nYour previous draft:\n{draft}\n\n"
             f"Fact-check corrections to apply:\n{fixes}\n\nRewrite the full content.")).text

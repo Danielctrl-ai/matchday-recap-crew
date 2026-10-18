@@ -1,0 +1,471 @@
+{
+  "match_id": "SYN-41196",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Northgate Athletic",
+  "away_team": "Kingsbridge United",
+  "home_style": "pressing",
+  "away_style": "possession",
+  "final_score": "4-2",
+  "team_stats": {
+    "Northgate Athletic": {
+      "passes": 388,
+      "shots": 9,
+      "shots_on_target": 5,
+      "xg": 2.16,
+      "corners": 2,
+      "fouls": 5,
+      "yellow_cards": 0,
+      "red_cards": 0,
+      "possession_pct": 65
+    },
+    "Kingsbridge United": {
+      "passes": 197,
+      "shots": 6,
+      "shots_on_target": 5,
+      "xg": 1.46,
+      "corners": 1,
+      "fouls": 6,
+      "yellow_cards": 2,
+      "red_cards": 0,
+      "possession_pct": 35
+    }
+  },
+  "lineups": {
+    "Northgate Athletic": [
+      {
+        "id": "NOR01",
+        "name": "Theo Doyle",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "NOR02",
+        "name": "Marcus Doyle",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "NOR03",
+        "name": "Rafa Castell",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "NOR04",
+        "name": "Tomas Ashdown",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "NOR05",
+        "name": "Felix Brennan",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "NOR06",
+        "name": "Leo Silva-Reed",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "NOR07",
+        "name": "Owen Doyle",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "NOR08",
+        "name": "Theo Silva-Reed",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "NOR09",
+        "name": "Felix Quill",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "NOR10",
+        "name": "Mateo Mensah",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "NOR11",
+        "name": "Sami Varga",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "NOR12",
+        "name": "Kai Iversen",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "NOR13",
+        "name": "Felix Fairbairn",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "NOR14",
+        "name": "Luca Doyle",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "NOR15",
+        "name": "Kai Brennan",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Kingsbridge United": [
+      {
+        "id": "KIN01",
+        "name": "Ade Castell",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "KIN02",
+        "name": "Jonah Varga",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "KIN03",
+        "name": "Jonah Silva-Reed",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "KIN04",
+        "name": "Rafa Brennan",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "KIN05",
+        "name": "Dario Okafor",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "KIN06",
+        "name": "Ade Silva-Reed",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "KIN07",
+        "name": "Felix Varga",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "KIN08",
+        "name": "Luca Ashdown",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "KIN09",
+        "name": "Elias Ashdown",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "KIN10",
+        "name": "Tomas Hartley",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "KIN11",
+        "name": "Rafa Quill",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "KIN12",
+        "name": "Sami Adeyemi",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "KIN13",
+        "name": "Marcus Hartley",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "KIN14",
+        "name": "Ade Mensah",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "KIN15",
+        "name": "Kai Silva-Reed",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 4,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Rafa Brennan",
+      "card": "yellow"
+    },
+    {
+      "minute": 9,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Ade Silva-Reed"
+    },
+    {
+      "minute": 10,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Elias Ashdown",
+      "xg": 0.08,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 10,
+      "team": "Kingsbridge United",
+      "type": "corner"
+    },
+    {
+      "minute": 16,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Rafa Quill",
+      "xg": 0.15,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 18,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Luca Ashdown",
+      "xg": 0.21,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 18,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Rafa Castell"
+    },
+    {
+      "minute": 20,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Felix Quill"
+    },
+    {
+      "minute": 24,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Mateo Mensah"
+    },
+    {
+      "minute": 27,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Theo Silva-Reed",
+      "xg": 0.56,
+      "zone": "close range",
+      "on_target": true,
+      "assist": "Owen Doyle",
+      "score_after": "1-0"
+    },
+    {
+      "minute": 30,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Theo Silva-Reed",
+      "xg": 0.18,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 37,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Theo Silva-Reed"
+    },
+    {
+      "minute": 42,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Sami Varga",
+      "xg": 0.27,
+      "zone": "inside box",
+      "on_target": true,
+      "assist": "Felix Quill",
+      "score_after": "2-0"
+    },
+    {
+      "minute": 44,
+      "team": "Kingsbridge United",
+      "type": "goal",
+      "player": "Tomas Hartley",
+      "xg": 0.14,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "2-1"
+    },
+    {
+      "minute": 47,
+      "team": "Kingsbridge United",
+      "type": "goal",
+      "player": "Felix Varga",
+      "xg": 0.68,
+      "zone": "close range",
+      "on_target": true,
+      "score_after": "2-2"
+    },
+    {
+      "minute": 47,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Owen Doyle"
+    },
+    {
+      "minute": 50,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Theo Silva-Reed",
+      "xg": 0.15,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 50,
+      "team": "Northgate Athletic",
+      "type": "corner"
+    },
+    {
+      "minute": 51,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Felix Quill",
+      "xg": 0.44,
+      "zone": "close range",
+      "on_target": true,
+      "assist": "Owen Doyle",
+      "score_after": "3-2"
+    },
+    {
+      "minute": 60,
+      "team": "Kingsbridge United",
+      "type": "substitution",
+      "player_off": "Jonah Varga",
+      "player_on": "Sami Adeyemi"
+    },
+    {
+      "minute": 63,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Theo Silva-Reed",
+      "xg": 0.04,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 63,
+      "team": "Northgate Athletic",
+      "type": "corner"
+    },
+    {
+      "minute": 63,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Rafa Quill",
+      "card": "yellow"
+    },
+    {
+      "minute": 70,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Dario Okafor"
+    },
+    {
+      "minute": 70,
+      "team": "Northgate Athletic",
+      "type": "substitution",
+      "player_off": "Leo Silva-Reed",
+      "player_on": "Kai Iversen"
+    },
+    {
+      "minute": 76,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Rafa Quill"
+    },
+    {
+      "minute": 78,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Felix Quill",
+      "xg": 0.05,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 79,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Theo Silva-Reed",
+      "xg": 0.29,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 80,
+      "team": "Northgate Athletic",
+      "type": "substitution",
+      "player_off": "Theo Silva-Reed",
+      "player_on": "Felix Fairbairn"
+    },
+    {
+      "minute": 83,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Luca Ashdown",
+      "xg": 0.2,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 92,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Rafa Brennan"
+    },
+    {
+      "minute": 94,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Mateo Mensah",
+      "xg": 0.18,
+      "zone": "inside box",
+      "on_target": true,
+      "assist": "Owen Doyle",
+      "score_after": "4-2"
+    }
+  ]
+}

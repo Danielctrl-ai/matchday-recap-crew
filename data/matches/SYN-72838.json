@@ -1,0 +1,437 @@
+{
+  "match_id": "SYN-72838",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Riverside Rovers",
+  "away_team": "Millbrook Town",
+  "home_style": "possession",
+  "away_style": "counter",
+  "final_score": "2-1",
+  "team_stats": {
+    "Riverside Rovers": {
+      "passes": 400,
+      "shots": 11,
+      "shots_on_target": 6,
+      "xg": 1.68,
+      "corners": 1,
+      "fouls": 1,
+      "yellow_cards": 0,
+      "red_cards": 0,
+      "possession_pct": 67
+    },
+    "Millbrook Town": {
+      "passes": 211,
+      "shots": 4,
+      "shots_on_target": 2,
+      "xg": 1.03,
+      "corners": 1,
+      "fouls": 6,
+      "yellow_cards": 3,
+      "red_cards": 0,
+      "possession_pct": 33
+    }
+  },
+  "lineups": {
+    "Riverside Rovers": [
+      {
+        "id": "RIV01",
+        "name": "Kai Ashdown",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "RIV02",
+        "name": "Tomas Mensah",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "RIV03",
+        "name": "Tomas Lindqvist",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "RIV04",
+        "name": "Leo Quill",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "RIV05",
+        "name": "Rafa Iversen",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "RIV06",
+        "name": "Kai Lindqvist",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "RIV07",
+        "name": "Leo Hartley",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "RIV08",
+        "name": "Dario Kowal",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "RIV09",
+        "name": "Rafa Varga",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "RIV10",
+        "name": "Rafa Okafor",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "RIV11",
+        "name": "Tomas Ashdown",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "RIV12",
+        "name": "Elias Silva-Reed",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "RIV13",
+        "name": "Kai Adeyemi",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "RIV14",
+        "name": "Felix Castell",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "RIV15",
+        "name": "Niko Hartley",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Millbrook Town": [
+      {
+        "id": "MIL01",
+        "name": "Luca Doyle",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "MIL02",
+        "name": "Niko Iversen",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "MIL03",
+        "name": "Mateo Doyle",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "MIL04",
+        "name": "Leo Mensah",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "MIL05",
+        "name": "Tomas Castell",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "MIL06",
+        "name": "Felix Adeyemi",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "MIL07",
+        "name": "Mateo Quill",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "MIL08",
+        "name": "Theo Moreau",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "MIL09",
+        "name": "Leo Varga",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "MIL10",
+        "name": "Luca Iversen",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "MIL11",
+        "name": "Sami Mensah",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "MIL12",
+        "name": "Tomas Fairbairn",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "MIL13",
+        "name": "Elias Doyle",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "MIL14",
+        "name": "Felix Kowal",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "MIL15",
+        "name": "Rafa Mensah",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 1,
+      "team": "Riverside Rovers",
+      "type": "goal",
+      "player": "Tomas Ashdown",
+      "xg": 0.27,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "1-0"
+    },
+    {
+      "minute": 4,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Dario Kowal",
+      "xg": 0.22,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 10,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Dario Kowal",
+      "xg": 0.18,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 12,
+      "team": "Millbrook Town",
+      "type": "goal",
+      "player": "Theo Moreau",
+      "xg": 0.68,
+      "zone": "close range",
+      "on_target": true,
+      "assist": "Leo Varga",
+      "score_after": "1-1"
+    },
+    {
+      "minute": 19,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Leo Varga"
+    },
+    {
+      "minute": 24,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Tomas Castell"
+    },
+    {
+      "minute": 29,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Felix Adeyemi",
+      "card": "yellow"
+    },
+    {
+      "minute": 31,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Rafa Varga",
+      "xg": 0.09,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 32,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Mateo Quill",
+      "xg": 0.16,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 35,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Sami Mensah",
+      "card": "yellow"
+    },
+    {
+      "minute": 38,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Luca Iversen",
+      "xg": 0.07,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 38,
+      "team": "Millbrook Town",
+      "type": "corner"
+    },
+    {
+      "minute": 40,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Theo Moreau",
+      "xg": 0.12,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 42,
+      "team": "Riverside Rovers",
+      "type": "foul",
+      "player": "Dario Kowal"
+    },
+    {
+      "minute": 47,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Rafa Okafor",
+      "xg": 0.06,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 52,
+      "team": "Riverside Rovers",
+      "type": "goal",
+      "player": "Rafa Okafor",
+      "xg": 0.22,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "2-1"
+    },
+    {
+      "minute": 60,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Felix Adeyemi",
+      "card": "yellow"
+    },
+    {
+      "minute": 60,
+      "team": "Riverside Rovers",
+      "type": "substitution",
+      "player_off": "Rafa Iversen",
+      "player_on": "Elias Silva-Reed"
+    },
+    {
+      "minute": 69,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Elias Silva-Reed",
+      "xg": 0.11,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 70,
+      "team": "Riverside Rovers",
+      "type": "substitution",
+      "player_off": "Rafa Okafor",
+      "player_on": "Kai Adeyemi"
+    },
+    {
+      "minute": 73,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Leo Hartley",
+      "xg": 0.08,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 77,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Dario Kowal",
+      "xg": 0.07,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 77,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Mateo Quill"
+    },
+    {
+      "minute": 80,
+      "team": "Riverside Rovers",
+      "type": "substitution",
+      "player_off": "Kai Adeyemi",
+      "player_on": "Felix Castell"
+    },
+    {
+      "minute": 88,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Elias Silva-Reed",
+      "xg": 0.14,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 89,
+      "team": "Riverside Rovers",
+      "type": "shot",
+      "player": "Rafa Varga",
+      "xg": 0.24,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 89,
+      "team": "Riverside Rovers",
+      "type": "corner"
+    }
+  ]
+}

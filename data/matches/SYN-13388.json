@@ -1,0 +1,495 @@
+{
+  "match_id": "SYN-13388",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Ashford Wanderers",
+  "away_team": "Northgate Athletic",
+  "home_style": "direct",
+  "away_style": "pressing",
+  "final_score": "1-5",
+  "team_stats": {
+    "Ashford Wanderers": {
+      "passes": 248,
+      "shots": 5,
+      "shots_on_target": 2,
+      "xg": 1.32,
+      "corners": 1,
+      "fouls": 9,
+      "yellow_cards": 0,
+      "red_cards": 0,
+      "possession_pct": 41
+    },
+    "Northgate Athletic": {
+      "passes": 359,
+      "shots": 11,
+      "shots_on_target": 7,
+      "xg": 2.84,
+      "corners": 2,
+      "fouls": 5,
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "possession_pct": 59
+    }
+  },
+  "lineups": {
+    "Ashford Wanderers": [
+      {
+        "id": "ASH01",
+        "name": "Luca Hartley",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "ASH02",
+        "name": "Dario Silva-Reed",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "ASH03",
+        "name": "Tomas Doyle",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "ASH04",
+        "name": "Sami Fairbairn",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "ASH05",
+        "name": "Felix Okafor",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "ASH06",
+        "name": "Niko Adeyemi",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "ASH07",
+        "name": "Jonah Brennan",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "ASH08",
+        "name": "Ade Lindqvist",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "ASH09",
+        "name": "Tomas Kowal",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "ASH10",
+        "name": "Kai Varga",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "ASH11",
+        "name": "Marcus Brennan",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "ASH12",
+        "name": "Kai Hartley",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "ASH13",
+        "name": "Owen Lindqvist",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "ASH14",
+        "name": "Ade Fairbairn",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "ASH15",
+        "name": "Marcus Doyle",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Northgate Athletic": [
+      {
+        "id": "NOR01",
+        "name": "Sami Castell",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "NOR02",
+        "name": "Sami Silva-Reed",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "NOR03",
+        "name": "Rafa Quill",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "NOR04",
+        "name": "Owen Lindqvist",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "NOR05",
+        "name": "Elias Quill",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "NOR06",
+        "name": "Ade Silva-Reed",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "NOR07",
+        "name": "Sami Iversen",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "NOR08",
+        "name": "Dario Hartley",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "NOR09",
+        "name": "Kai Lindqvist",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "NOR10",
+        "name": "Tomas Adeyemi",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "NOR11",
+        "name": "Kai Castell",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "NOR12",
+        "name": "Dario Iversen",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "NOR13",
+        "name": "Ade Iversen",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "NOR14",
+        "name": "Marcus Hartley",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "NOR15",
+        "name": "Luca Lindqvist",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 4,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Felix Okafor"
+    },
+    {
+      "minute": 5,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Kai Lindqvist",
+      "xg": 0.02,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 10,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Marcus Brennan",
+      "xg": 0.27,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 13,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Dario Hartley",
+      "xg": 0.16,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 13,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Niko Adeyemi"
+    },
+    {
+      "minute": 14,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Sami Fairbairn"
+    },
+    {
+      "minute": 15,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Kai Castell",
+      "xg": 0.12,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 15,
+      "team": "Northgate Athletic",
+      "type": "corner"
+    },
+    {
+      "minute": 19,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Kai Castell",
+      "xg": 0.12,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "0-1"
+    },
+    {
+      "minute": 23,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Marcus Brennan"
+    },
+    {
+      "minute": 24,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Tomas Doyle"
+    },
+    {
+      "minute": 29,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Dario Hartley",
+      "xg": 0.11,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 30,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Ade Lindqvist",
+      "xg": 0.07,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 33,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Sami Silva-Reed",
+      "card": "yellow"
+    },
+    {
+      "minute": 38,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Kai Castell",
+      "xg": 0.29,
+      "zone": "inside box",
+      "on_target": true,
+      "score_after": "0-2"
+    },
+    {
+      "minute": 39,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Tomas Kowal",
+      "xg": 0.29,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 39,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Dario Hartley"
+    },
+    {
+      "minute": 41,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Jonah Brennan"
+    },
+    {
+      "minute": 44,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Kai Castell",
+      "xg": 0.18,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 44,
+      "team": "Northgate Athletic",
+      "type": "corner"
+    },
+    {
+      "minute": 49,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Tomas Doyle"
+    },
+    {
+      "minute": 51,
+      "team": "Ashford Wanderers",
+      "type": "shot",
+      "player": "Marcus Brennan",
+      "xg": 0.08,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 51,
+      "team": "Ashford Wanderers",
+      "type": "corner"
+    },
+    {
+      "minute": 53,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Sami Iversen",
+      "xg": 0.24,
+      "zone": "inside box",
+      "on_target": true,
+      "assist": "Dario Hartley",
+      "score_after": "0-3"
+    },
+    {
+      "minute": 56,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Tomas Adeyemi",
+      "xg": 0.12,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 60,
+      "team": "Northgate Athletic",
+      "type": "substitution",
+      "player_off": "Owen Lindqvist",
+      "player_on": "Dario Iversen"
+    },
+    {
+      "minute": 63,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Kai Castell",
+      "xg": 0.76,
+      "zone": "close range",
+      "on_target": true,
+      "score_after": "0-4"
+    },
+    {
+      "minute": 66,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Tomas Adeyemi"
+    },
+    {
+      "minute": 70,
+      "team": "Ashford Wanderers",
+      "type": "goal",
+      "player": "Ade Lindqvist",
+      "xg": 0.61,
+      "zone": "close range",
+      "on_target": true,
+      "score_after": "1-4"
+    },
+    {
+      "minute": 70,
+      "team": "Ashford Wanderers",
+      "type": "substitution",
+      "player_off": "Tomas Kowal",
+      "player_on": "Kai Hartley"
+    },
+    {
+      "minute": 73,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Sami Iversen",
+      "xg": 0.72,
+      "zone": "close range",
+      "on_target": true,
+      "assist": "Dario Hartley",
+      "score_after": "1-5"
+    },
+    {
+      "minute": 77,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Kai Varga"
+    },
+    {
+      "minute": 80,
+      "team": "Northgate Athletic",
+      "type": "substitution",
+      "player_off": "Sami Silva-Reed",
+      "player_on": "Ade Iversen"
+    },
+    {
+      "minute": 83,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Tomas Adeyemi"
+    },
+    {
+      "minute": 85,
+      "team": "Ashford Wanderers",
+      "type": "foul",
+      "player": "Jonah Brennan"
+    },
+    {
+      "minute": 91,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Ade Iversen"
+    }
+  ]
+}

@@ -82,14 +82,20 @@ def build_agents(client, match: dict) -> dict:
         instructions=(
             "You are a strict fact-checker. Check EVERY factual claim in the draft (scores, scorers, minutes, "
             "assists, stats, cards, substitutions) using your tools. Do not trust the draft.\n"
+            "Give every factual claim a verdict:\n"
+            '- "correct": the data confirms it.\n'
+            '- "wrong": the data contradicts it. Say what is wrong in problem and give the true fact in '
+            "correct_fact.\n"
+            '- "unsupported": the data does not back it up (e.g. a player called a substitute who was not '
+            "one). Explain in problem.\n"
+            "Check claims about a half or a period of the match with get_period_stats before calling them "
+            "unsupported.\n"
+            "Leaving a fact out is never an issue. Opinions and adjectives are not claims; skip them.\n"
             "Reply with ONLY a JSON object, no other text:\n"
-            '{"approved": true|false, "claims_checked": <int>, '
-            '"issues": [{"claim": "...", "problem": "...", "correct_fact": "..."}]}\n'
-            "List ONLY claims that are wrong. Never put a correct claim in issues. "
-            "Every issue must include correct_fact.\n"
-            "approved is true only if issues is empty. Opinions and adjectives are not issues."
+            '{"claims": [{"claim": "...", "verdict": "correct|wrong|unsupported", '
+            '"problem": "", "correct_fact": ""}]}'
         ),
-        tools=[t["overview"], t["goals"], t["minute"], t["player"], t["period"]],
+        tools=[t["overview"], t["goals"], t["moments"], t["minute"], t["player"], t["period"]],
     )
 
     return {"stats": stats, "analyst": analyst, "writer": writer, "checker": checker}
@@ -105,12 +111,18 @@ def parse_verdict(text: str) -> dict:
     except json.JSONDecodeError:
         return {"approved": False, "claims_checked": 0,
                 "issues": [{"claim": "-", "problem": "Fact-checker returned invalid JSON", "correct_fact": "-"}]}
-    # Drop "issues" that are really confirmations: a genuine issue always comes with a correct fact.
-    v["issues"] = [i for i in v.get("issues") or []
-                   if isinstance(i, dict)
-                   and str(i.get("correct_fact") or "").strip().lower() not in ("", "none", "null", "n/a", "-")]
-    v["approved"] = not v["issues"]
-    return v
+    claims = [c for c in v.get("claims") or [] if isinstance(c, dict)]
+    issues = []
+    for c in claims:
+        verdict = str(c.get("verdict", "")).strip().lower()
+        if verdict == "wrong":
+            issues.append({"claim": c.get("claim", ""), "problem": c.get("problem", ""),
+                           "correct_fact": c.get("correct_fact", "")})
+        elif verdict == "unsupported":
+            issues.append({"claim": c.get("claim", ""), "problem": c.get("problem") or "Not supported by the data",
+                           "correct_fact": "Remove this claim - the match data does not support it."})
+    # approved and claims_checked are worked out here, not trusted from the model.
+    return {"approved": not issues, "claims_checked": len(claims), "issues": issues, "claims": claims}
 
 
 DEMO_ERROR_NOTE = (

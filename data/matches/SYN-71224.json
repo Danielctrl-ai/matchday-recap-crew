@@ -1,0 +1,358 @@
+{
+  "match_id": "SYN-71224",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Harbour City FC",
+  "away_team": "Kingsbridge United",
+  "home_style": "counter",
+  "away_style": "possession",
+  "final_score": "0-1",
+  "team_stats": {
+    "Harbour City FC": {
+      "passes": 191,
+      "shots": 2,
+      "shots_on_target": 2,
+      "xg": 0.28,
+      "corners": 0,
+      "fouls": 4,
+      "yellow_cards": 0,
+      "red_cards": 0,
+      "possession_pct": 32
+    },
+    "Kingsbridge United": {
+      "passes": 426,
+      "shots": 6,
+      "shots_on_target": 5,
+      "xg": 1.15,
+      "corners": 1,
+      "fouls": 2,
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "possession_pct": 68
+    }
+  },
+  "lineups": {
+    "Harbour City FC": [
+      {
+        "id": "HAR01",
+        "name": "Theo Fairbairn",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "HAR02",
+        "name": "Kai Quill",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "HAR03",
+        "name": "Luca Quill",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "HAR04",
+        "name": "Tomas Adeyemi",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "HAR05",
+        "name": "Leo Mensah",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "HAR06",
+        "name": "Ade Hartley",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "HAR07",
+        "name": "Luca Fairbairn",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "HAR08",
+        "name": "Niko Moreau",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "HAR09",
+        "name": "Dario Hartley",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "HAR10",
+        "name": "Leo Hartley",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "HAR11",
+        "name": "Rafa Doyle",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "HAR12",
+        "name": "Leo Kowal",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "HAR13",
+        "name": "Niko Varga",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "HAR14",
+        "name": "Niko Kowal",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "HAR15",
+        "name": "Luca Silva-Reed",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Kingsbridge United": [
+      {
+        "id": "KIN01",
+        "name": "Leo Doyle",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "KIN02",
+        "name": "Kai Castell",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "KIN03",
+        "name": "Owen Moreau",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "KIN04",
+        "name": "Dario Doyle",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "KIN05",
+        "name": "Rafa Silva-Reed",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "KIN06",
+        "name": "Owen Quill",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "KIN07",
+        "name": "Tomas Okafor",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "KIN08",
+        "name": "Mateo Kowal",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "KIN09",
+        "name": "Tomas Doyle",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "KIN10",
+        "name": "Jonah Varga",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "KIN11",
+        "name": "Felix Lindqvist",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "KIN12",
+        "name": "Luca Moreau",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "KIN13",
+        "name": "Jonah Mensah",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "KIN14",
+        "name": "Felix Quill",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "KIN15",
+        "name": "Leo Quill",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 10,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Tomas Okafor",
+      "xg": 0.02,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 13,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Tomas Doyle",
+      "xg": 0.11,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 20,
+      "team": "Kingsbridge United",
+      "type": "goal",
+      "player": "Felix Lindqvist",
+      "xg": 0.69,
+      "zone": "close range",
+      "on_target": true,
+      "score_after": "0-1"
+    },
+    {
+      "minute": 29,
+      "team": "Harbour City FC",
+      "type": "foul",
+      "player": "Leo Mensah"
+    },
+    {
+      "minute": 35,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Tomas Okafor",
+      "xg": 0.03,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 35,
+      "team": "Kingsbridge United",
+      "type": "corner"
+    },
+    {
+      "minute": 39,
+      "team": "Harbour City FC",
+      "type": "shot",
+      "player": "Luca Fairbairn",
+      "xg": 0.24,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 40,
+      "team": "Harbour City FC",
+      "type": "foul",
+      "player": "Leo Mensah"
+    },
+    {
+      "minute": 42,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Owen Quill",
+      "card": "yellow"
+    },
+    {
+      "minute": 47,
+      "team": "Kingsbridge United",
+      "type": "foul",
+      "player": "Kai Castell"
+    },
+    {
+      "minute": 48,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Tomas Doyle",
+      "xg": 0.08,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 56,
+      "team": "Harbour City FC",
+      "type": "foul",
+      "player": "Luca Fairbairn"
+    },
+    {
+      "minute": 60,
+      "team": "Kingsbridge United",
+      "type": "substitution",
+      "player_off": "Felix Lindqvist",
+      "player_on": "Luca Moreau"
+    },
+    {
+      "minute": 68,
+      "team": "Harbour City FC",
+      "type": "foul",
+      "player": "Ade Hartley"
+    },
+    {
+      "minute": 70,
+      "team": "Kingsbridge United",
+      "type": "substitution",
+      "player_off": "Mateo Kowal",
+      "player_on": "Jonah Mensah"
+    },
+    {
+      "minute": 72,
+      "team": "Kingsbridge United",
+      "type": "shot",
+      "player": "Jonah Mensah",
+      "xg": 0.22,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 73,
+      "team": "Harbour City FC",
+      "type": "shot",
+      "player": "Rafa Doyle",
+      "xg": 0.04,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 80,
+      "team": "Harbour City FC",
+      "type": "substitution",
+      "player_off": "Niko Moreau",
+      "player_on": "Leo Kowal"
+    }
+  ]
+}

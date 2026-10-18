@@ -1,0 +1,463 @@
+{
+  "match_id": "SYN-76778",
+  "synthetic": true,
+  "competition": "Synthetic League (fictional)",
+  "home_team": "Northgate Athletic",
+  "away_team": "Millbrook Town",
+  "home_style": "pressing",
+  "away_style": "counter",
+  "final_score": "2-0",
+  "team_stats": {
+    "Northgate Athletic": {
+      "passes": 418,
+      "shots": 10,
+      "shots_on_target": 5,
+      "xg": 2.22,
+      "corners": 2,
+      "fouls": 4,
+      "yellow_cards": 0,
+      "red_cards": 0,
+      "possession_pct": 64
+    },
+    "Millbrook Town": {
+      "passes": 213,
+      "shots": 2,
+      "shots_on_target": 2,
+      "xg": 0.49,
+      "corners": 0,
+      "fouls": 12,
+      "yellow_cards": 2,
+      "red_cards": 0,
+      "possession_pct": 36
+    }
+  },
+  "lineups": {
+    "Northgate Athletic": [
+      {
+        "id": "NOR01",
+        "name": "Marcus Iversen",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "NOR02",
+        "name": "Mateo Moreau",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "NOR03",
+        "name": "Owen Brennan",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "NOR04",
+        "name": "Leo Okafor",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "NOR05",
+        "name": "Luca Brennan",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "NOR06",
+        "name": "Kai Okafor",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "NOR07",
+        "name": "Sami Castell",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "NOR08",
+        "name": "Jonah Quill",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "NOR09",
+        "name": "Rafa Brennan",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "NOR10",
+        "name": "Theo Kowal",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "NOR11",
+        "name": "Marcus Varga",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "NOR12",
+        "name": "Jonah Varga",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "NOR13",
+        "name": "Leo Silva-Reed",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "NOR14",
+        "name": "Niko Okafor",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "NOR15",
+        "name": "Kai Doyle",
+        "position": "CB",
+        "starter": false
+      }
+    ],
+    "Millbrook Town": [
+      {
+        "id": "MIL01",
+        "name": "Dario Kowal",
+        "position": "GK",
+        "starter": true
+      },
+      {
+        "id": "MIL02",
+        "name": "Leo Lindqvist",
+        "position": "RB",
+        "starter": true
+      },
+      {
+        "id": "MIL03",
+        "name": "Dario Quill",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "MIL04",
+        "name": "Sami Varga",
+        "position": "CB",
+        "starter": true
+      },
+      {
+        "id": "MIL05",
+        "name": "Jonah Silva-Reed",
+        "position": "LB",
+        "starter": true
+      },
+      {
+        "id": "MIL06",
+        "name": "Elias Mensah",
+        "position": "DM",
+        "starter": true
+      },
+      {
+        "id": "MIL07",
+        "name": "Jonah Quill",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "MIL08",
+        "name": "Luca Iversen",
+        "position": "CM",
+        "starter": true
+      },
+      {
+        "id": "MIL09",
+        "name": "Rafa Hartley",
+        "position": "RW",
+        "starter": true
+      },
+      {
+        "id": "MIL10",
+        "name": "Marcus Moreau",
+        "position": "ST",
+        "starter": true
+      },
+      {
+        "id": "MIL11",
+        "name": "Mateo Fairbairn",
+        "position": "LW",
+        "starter": true
+      },
+      {
+        "id": "MIL12",
+        "name": "Rafa Doyle",
+        "position": "CM",
+        "starter": false
+      },
+      {
+        "id": "MIL13",
+        "name": "Felix Okafor",
+        "position": "ST",
+        "starter": false
+      },
+      {
+        "id": "MIL14",
+        "name": "Jonah Okafor",
+        "position": "RW",
+        "starter": false
+      },
+      {
+        "id": "MIL15",
+        "name": "Luca Lindqvist",
+        "position": "CB",
+        "starter": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "minute": 5,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Theo Kowal",
+      "xg": 0.6,
+      "zone": "close range",
+      "on_target": true,
+      "assist": "Sami Castell",
+      "score_after": "1-0"
+    },
+    {
+      "minute": 8,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Theo Kowal"
+    },
+    {
+      "minute": 14,
+      "team": "Northgate Athletic",
+      "type": "goal",
+      "player": "Marcus Varga",
+      "xg": 0.68,
+      "zone": "close range",
+      "on_target": true,
+      "assist": "Sami Castell",
+      "score_after": "2-0"
+    },
+    {
+      "minute": 14,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Marcus Moreau"
+    },
+    {
+      "minute": 15,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Marcus Varga"
+    },
+    {
+      "minute": 17,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Marcus Moreau"
+    },
+    {
+      "minute": 20,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Leo Okafor"
+    },
+    {
+      "minute": 22,
+      "team": "Northgate Athletic",
+      "type": "foul",
+      "player": "Sami Castell"
+    },
+    {
+      "minute": 25,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Rafa Brennan",
+      "xg": 0.15,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 37,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Rafa Brennan",
+      "xg": 0.08,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 38,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Theo Kowal",
+      "xg": 0.03,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 39,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Rafa Brennan",
+      "xg": 0.16,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 39,
+      "team": "Northgate Athletic",
+      "type": "corner"
+    },
+    {
+      "minute": 42,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Jonah Silva-Reed"
+    },
+    {
+      "minute": 49,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Luca Iversen"
+    },
+    {
+      "minute": 52,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Jonah Quill",
+      "card": "yellow"
+    },
+    {
+      "minute": 55,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Mateo Fairbairn"
+    },
+    {
+      "minute": 57,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Luca Iversen",
+      "xg": 0.21,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 59,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Dario Quill"
+    },
+    {
+      "minute": 60,
+      "team": "Northgate Athletic",
+      "type": "substitution",
+      "player_off": "Sami Castell",
+      "player_on": "Jonah Varga"
+    },
+    {
+      "minute": 62,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Jonah Varga",
+      "xg": 0.27,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 62,
+      "team": "Northgate Athletic",
+      "type": "corner"
+    },
+    {
+      "minute": 65,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Theo Kowal",
+      "xg": 0.11,
+      "zone": "inside box",
+      "on_target": false
+    },
+    {
+      "minute": 69,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Elias Mensah",
+      "card": "yellow"
+    },
+    {
+      "minute": 70,
+      "team": "Northgate Athletic",
+      "type": "substitution",
+      "player_off": "Marcus Varga",
+      "player_on": "Leo Silva-Reed"
+    },
+    {
+      "minute": 80,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Elias Mensah"
+    },
+    {
+      "minute": 80,
+      "team": "Northgate Athletic",
+      "type": "substitution",
+      "player_off": "Leo Okafor",
+      "player_on": "Niko Okafor"
+    },
+    {
+      "minute": 82,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Theo Kowal",
+      "xg": 0.07,
+      "zone": "outside box",
+      "on_target": true
+    },
+    {
+      "minute": 84,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Sami Varga"
+    },
+    {
+      "minute": 89,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Jonah Quill"
+    },
+    {
+      "minute": 90,
+      "team": "Millbrook Town",
+      "type": "shot",
+      "player": "Rafa Hartley",
+      "xg": 0.28,
+      "zone": "inside box",
+      "on_target": true
+    },
+    {
+      "minute": 91,
+      "team": "Northgate Athletic",
+      "type": "shot",
+      "player": "Jonah Varga",
+      "xg": 0.07,
+      "zone": "outside box",
+      "on_target": false
+    },
+    {
+      "minute": 93,
+      "team": "Millbrook Town",
+      "type": "foul",
+      "player": "Sami Varga"
+    }
+  ]
+}

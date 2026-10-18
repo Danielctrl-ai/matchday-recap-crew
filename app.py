@@ -111,7 +111,14 @@ for col, (key, (icon, name, desc)) in zip(cols, AGENTS.items()):
     col.markdown(f"**{icon} {name}**  \n<span style='font-size:0.85em;opacity:0.75'>{desc}</span>",
                  unsafe_allow_html=True)
 
-if st.button("▶ Run the Recap Crew", type="primary", use_container_width=True):
+MAX_RUNS_PER_SESSION = 10  # simple cost guard for the public demo
+runs = st.session_state.get("runs", 0)
+clicked = st.button("▶ Run the Recap Crew", type="primary", use_container_width=True,
+                    disabled=runs >= MAX_RUNS_PER_SESSION)
+if runs >= MAX_RUNS_PER_SESSION:
+    st.info("Demo limit reached for this session - refresh the page to start a new session.")
+if clicked:
+    st.session_state.runs = runs + 1
     feed = st.container()
     current = {}
 

@@ -82,18 +82,14 @@ def build_agents(client, match: dict) -> dict:
         instructions=(
             "You are a strict fact-checker. Check EVERY factual claim in the draft (scores, scorers, minutes, "
             "assists, stats, cards, substitutions) using your tools. Do not trust the draft.\n"
-            "Give every factual claim a verdict:\n"
-            '- "correct": the data confirms it.\n'
-            '- "wrong": the data contradicts it. Say what is wrong in problem and give the true fact in '
-            "correct_fact.\n"
-            '- "unsupported": the data does not back it up (e.g. a player called a substitute who was not '
-            "one). Explain in problem.\n"
-            "Check claims about a half or a period of the match with get_period_stats before calling them "
-            "unsupported.\n"
-            "Leaving a fact out is never an issue. Opinions and adjectives are not claims; skip them.\n"
             "Reply with ONLY a JSON object, no other text:\n"
-            '{"claims": [{"claim": "...", "verdict": "correct|wrong|unsupported", '
-            '"problem": "", "correct_fact": ""}]}'
+            '{"claims": [{"claim": "...", "verdict": "correct" | "wrong" | "opinion", '
+            '"evidence": "what the data shows", "correct_fact": "the right fact if wrong, else empty"}]}\n'
+            "List every claim you checked. Use verdict \"wrong\" ONLY when the data contradicts the claim "
+            "or the data has no record of a stated event (e.g. a substitution that never happened). "
+            "Check claims about a half or a period of the match with get_period_stats before calling them "
+            "wrong. Leaving a fact out is never wrong. "
+            "Opinions, adjectives and tactical interpretation are \"opinion\", never \"wrong\"."
         ),
         tools=[t["overview"], t["goals"], t["moments"], t["minute"], t["player"], t["period"]],
     )
@@ -111,18 +107,20 @@ def parse_verdict(text: str) -> dict:
     except json.JSONDecodeError:
         return {"approved": False, "claims_checked": 0,
                 "issues": [{"claim": "-", "problem": "Fact-checker returned invalid JSON", "correct_fact": "-"}]}
-    claims = [c for c in v.get("claims") or [] if isinstance(c, dict)]
-    issues = []
-    for c in claims:
-        verdict = str(c.get("verdict", "")).strip().lower()
-        if verdict == "wrong":
-            issues.append({"claim": c.get("claim", ""), "problem": c.get("problem", ""),
-                           "correct_fact": c.get("correct_fact", "")})
-        elif verdict == "unsupported":
-            issues.append({"claim": c.get("claim", ""), "problem": c.get("problem") or "Not supported by the data",
-                           "correct_fact": "Remove this claim - the match data does not support it."})
-    # approved and claims_checked are worked out here, not trusted from the model.
-    return {"approved": not issues, "claims_checked": len(claims), "issues": issues, "claims": claims}
+    claims = v.get("claims")
+    if claims is None:  # older format: {"approved", "issues"}
+        issues = [{"claim": i.get("claim", ""), "problem": i.get("problem", ""),
+                   "correct_fact": i.get("correct_fact", "")}
+                  for i in v.get("issues") or [] if isinstance(i, dict)]
+        return {"approved": not issues, "claims_checked": v.get("claims_checked", len(issues)),
+                "issues": issues, "claims": []}
+    claims = [c for c in claims if isinstance(c, dict)]
+    issues = [{"claim": c.get("claim", ""), "problem": c.get("evidence", ""),
+               "correct_fact": c.get("correct_fact", "")}
+              for c in claims if str(c.get("verdict", "")).lower() == "wrong"]
+    return {"approved": not issues, "claims_checked": len(claims),
+            "verified": sum(1 for c in claims if str(c.get("verdict", "")).lower() == "correct"),
+            "issues": issues, "claims": claims}
 
 
 DEMO_ERROR_NOTE = (
@@ -161,7 +159,8 @@ async def run_crew(match: dict, on_event=None, client=None, plant_error: bool = 
             emit("FactCheckerAgent", "approved",
                  f"All {verdict.get('claims_checked', '?')} claims verified.")
             break
-        emit("FactCheckerAgent", "rejected", json.dumps(verdict["issues"], indent=2))
+        emit("FactCheckerAgent", "rejected", json.dumps(
+            {"checked": verdict.get("claims_checked", 0), "issues": verdict["issues"]}, indent=2))
         if attempt == MAX_REVISIONS:
             break
         emit("WriterAgent", "working", "Fixing the issues the fact-checker found...")

@@ -122,9 +122,10 @@ if st.button("▶ Run the Recap Crew", type="primary", use_container_width=True)
             return
         box = current.pop(agent, None) or feed.status(f"{icon} {name}", expanded=False)
         if status == "rejected":
-            issues = json.loads(text)
-            box.update(label=f"{icon} {name}: found {len(issues)} issue(s), sending back to the Writer",
-                       state="error", expanded=True)
+            data = json.loads(text)
+            issues = data["issues"]
+            box.update(label=f"{icon} {name}: checked {data['checked']} claims, found {len(issues)} "
+                             f"wrong - sending back to the Writer", state="error", expanded=True)
             for i in issues:
                 box.markdown(f"- ❌ **{i.get('claim')}** - {i.get('problem')}  \n"
                              f"  ✅ Correct: {i.get('correct_fact')}")
